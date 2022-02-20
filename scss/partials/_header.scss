@@ -1,0 +1,33 @@
+.mainHeader {
+  width: 375px;
+  border: 1px solid red;
+  margin: auto;
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .btnHamburgerMenu {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .hamburgerMenu {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    margin-top: 30px;
+    a {
+      font-weight: bold;
+      line-height: 2;
+      color: $darkBlue !important;
+    }
+  }
+  .headerBtn {
+    display: none;
+  }
+}
