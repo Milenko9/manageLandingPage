@@ -2,7 +2,8 @@
 .mainHeader {
   width: 375px;
   border: 1px solid red;
-  margin: auto; }
+  margin: auto;
+  margin-top: 30px; }
   .mainHeader .container-fluid {
     padding: 0;
     margin: 0; }
@@ -26,6 +27,109 @@
       color: #242d52 !important; }
   .mainHeader .headerBtn {
     display: none; }
+
+.mainDiv {
+  width: 375px;
+  border: 4px solid green;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0; }
+  .mainDiv .joinDiv {
+    border: 1px solid red; }
+    .mainDiv .joinDiv .illustrationIntroDiv {
+      border: 1px solid blue; }
+    .mainDiv .joinDiv .firstArticleDiv {
+      border: 1px solid purple;
+      padding: 20px;
+      text-align: center; }
+      .mainDiv .joinDiv .firstArticleDiv h1 {
+        color: #242d52;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 1.3; }
+      .mainDiv .joinDiv .firstArticleDiv p {
+        color: #9095a7;
+        font-size: 16px;
+        line-height: 1.8; }
+      .mainDiv .joinDiv .firstArticleDiv button {
+        border: none;
+        background-color: #f25f3a;
+        padding: 12px 30px;
+        border-radius: 20px;
+        color: white;
+        font-size: 13px;
+        box-shadow: 0px 6px 9px 0px #f25f3a;
+        margin: 10px 0 50px; }
+  .mainDiv .mainAndThreeArticles {
+    border: 3px solid blue; }
+    .mainDiv .mainAndThreeArticles .mainArticle {
+      border: 3px solid orange;
+      padding: 20px;
+      text-align: center; }
+      .mainDiv .mainAndThreeArticles .mainArticle h2 {
+        color: #242d52;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 1.3;
+        padding: 0 35px; }
+      .mainDiv .mainAndThreeArticles .mainArticle p {
+        color: #9095a7;
+        font-size: 14px;
+        line-height: 1.8; }
+    .mainDiv .mainAndThreeArticles .articleOne, .mainDiv .mainAndThreeArticles .articleTwo, .mainDiv .mainAndThreeArticles .articleThree {
+      border: 2px solid red; }
+      .mainDiv .mainAndThreeArticles .articleOne p, .mainDiv .mainAndThreeArticles .articleTwo p, .mainDiv .mainAndThreeArticles .articleThree p {
+        color: #9095a7;
+        font-size: 14px;
+        line-height: 1.8;
+        padding: 10px; }
+      .mainDiv .mainAndThreeArticles .articleOne .articleTitle, .mainDiv .mainAndThreeArticles .articleTwo .articleTitle, .mainDiv .mainAndThreeArticles .articleThree .articleTitle {
+        height: 45px;
+        border: 2px solid black;
+        position: relative; }
+        .mainDiv .mainAndThreeArticles .articleOne .articleTitle span, .mainDiv .mainAndThreeArticles .articleTwo .articleTitle span, .mainDiv .mainAndThreeArticles .articleThree .articleTitle span {
+          background-color: #f25f3a;
+          padding: 7px 25px;
+          border-radius: 20px;
+          float: left;
+          font-size: 16px;
+          color: white;
+          font-weight: bold;
+          position: absolute;
+          left: 10px; }
+        .mainDiv .mainAndThreeArticles .articleOne .articleTitle h3, .mainDiv .mainAndThreeArticles .articleTwo .articleTitle h3, .mainDiv .mainAndThreeArticles .articleThree .articleTitle h3 {
+          color: #242d52;
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0;
+          background-color: #ffefeb;
+          padding: 9px 0 9px 30px;
+          margin-left: 55px;
+          float: left; }
+  .mainDiv .customersSection {
+    border: 4px solid black;
+    padding: 50px; }
+  .mainDiv .simplifyDiv {
+    background-color: #f25f3a;
+    text-align: center;
+    padding: 70px 30px;
+    background-image: url("../images/bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .mainDiv .simplifyDiv h4 {
+      color: white;
+      font-size: 36px;
+      line-height: 1.3; }
+    .mainDiv .simplifyDiv button {
+      border: none;
+      background-color: white;
+      padding: 12px 30px;
+      border-radius: 20px;
+      color: #f25f3a;
+      font-weight: bold;
+      font-size: 13px;
+      box-shadow: 0px 6px 9px 0px #f25f3a;
+      margin: 15px 0 0; }
 
 * {
   box-sizing: border-box; }
