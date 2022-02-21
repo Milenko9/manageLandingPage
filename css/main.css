@@ -33,6 +33,8 @@
       font-weight: bold;
       line-height: 2;
       color: #242d52 !important; }
+      .mainHeader .hamburgerMenu a:hover {
+        color: #9095a7 !important; }
   .mainHeader .headerBtn {
     display: none; }
 
@@ -61,7 +63,10 @@
       color: white;
       font-size: 13px;
       box-shadow: 0px 6px 9px 0px #f25f3a;
-      margin: 10px 0 50px; }
+      margin: 10px 0 50px;
+      transition: .2s; }
+      .mainDiv .joinDiv .firstArticleDiv button:hover {
+        opacity: .7; }
   .mainDiv .mainAndThreeArticles .mainArticle {
     padding: 20px;
     text-align: center; }
@@ -128,6 +133,9 @@
       padding: 0;
       border: 1px solid #f25f3a;
       transition: .3s; }
+      .mainDiv .customersSection .buttonsSlider button:hover {
+        opacity: .7;
+        background-color: #f25f3a; }
     .mainDiv .customersSection .customerGetStartedBtn {
       border: none;
       background-color: #f25f3a;
@@ -136,11 +144,14 @@
       color: white;
       font-size: 13px;
       box-shadow: 0px 6px 9px 0px #f25f3a;
-      margin: 40px 0; }
+      margin: 40px 0;
+      transition: .2s; }
+      .mainDiv .customersSection .customerGetStartedBtn:hover {
+        opacity: .7; }
   .mainDiv .simplifyDiv {
     background-color: #f25f3a;
     text-align: center;
-    padding: 70px 30px;
+    padding: 90px 30px;
     background-image: url("../images/bg-simplify-section-mobile.svg");
     background-repeat: no-repeat;
     background-size: contain; }
@@ -157,7 +168,92 @@
       font-weight: bold;
       font-size: 13px;
       box-shadow: 0px 6px 9px 0px #f25f3a;
-      margin: 15px 0 0; }
+      margin: 15px 0 0;
+      transition: .2s; }
+      .mainDiv .simplifyDiv button:hover {
+        color: #f25f3ab0; }
+
+.mainFooter {
+  width: 375px;
+  margin: auto;
+  background-color: #1d1e25;
+  padding: 0; }
+  .mainFooter .form {
+    position: relative; }
+    .mainFooter .form .inputFooterDiv {
+      margin: 30px 20px;
+      display: flex;
+      justify-content: space-between; }
+      .mainFooter .form .inputFooterDiv input {
+        width: 240px;
+        border: none;
+        border-radius: 20px;
+        background-color: white;
+        padding: 12px 25px;
+        font-size: 13px; }
+        .mainFooter .form .inputFooterDiv input:focus {
+          outline: none; }
+      .mainFooter .form .inputFooterDiv button {
+        border: none;
+        background-color: #f25f3a;
+        padding: 12px 30px;
+        border-radius: 20px;
+        color: white;
+        font-size: 13px;
+        transition: .2s;
+        text-transform: uppercase; }
+        .mainFooter .form .inputFooterDiv button:hover {
+          background-color: #e6846b; }
+    .mainFooter .form .errorEmail {
+      color: red;
+      font-size: 11px;
+      font-style: italic;
+      position: absolute;
+      top: 47px;
+      left: 40px;
+      display: none; }
+      .mainFooter .form .errorEmail p {
+        margin: 0; }
+  .mainFooter .navFooter {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between; }
+    .mainFooter .navFooter .firstFooterNav ul, .mainFooter .navFooter .secondFooterNav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .mainFooter .navFooter .firstFooterNav ul li, .mainFooter .navFooter .secondFooterNav ul li {
+        margin-bottom: 10px; }
+        .mainFooter .navFooter .firstFooterNav ul li a, .mainFooter .navFooter .secondFooterNav ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+          letter-spacing: 1px;
+          transition: .3s; }
+          .mainFooter .navFooter .firstFooterNav ul li a:hover, .mainFooter .navFooter .secondFooterNav ul li a:hover {
+            color: #f25f3a; }
+  .mainFooter .iconsLogoFooter .iconsFooter {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between; }
+    .mainFooter .iconsLogoFooter .iconsFooter img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer; }
+      .mainFooter .iconsLogoFooter .iconsFooter img:hover {
+        filter: brightness(0) saturate(100%) invert(47%) sepia(18%) saturate(5968%) hue-rotate(339deg) brightness(99%) contrast(91%); }
+  .mainFooter .iconsLogoFooter .logoFooter {
+    padding: 30px 0;
+    text-align: center; }
+  .mainFooter .copyrightDiv {
+    text-align: center;
+    width: 300px;
+    margin: auto; }
+    .mainFooter .copyrightDiv p {
+      color: #9095a7;
+      font-size: 13px;
+      margin: 0;
+      padding: 20px 0 30px; }
 
 * {
   box-sizing: border-box; }

@@ -69,3 +69,26 @@ function changeShanai() {
   aliBtn.classList.remove('btnCustomerActive');
   richardBtn.classList.remove('btnCustomerActive');
 }
+
+
+// EMAIL VALIDATION
+let email = document.querySelector('#emailInput');
+let goBtn = document.querySelector('#goBtn');
+let errorEmail = document.querySelector('.errorEmail');
+const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+
+goBtn.addEventListener('click', checkEmail);
+
+function checkEmail(e) {
+  e.preventDefault();
+  if (email.value.match(pattern)) {
+    email.style.border = '2px solid green';
+    email.style.color = 'green';
+    errorEmail.style.display = 'none';
+  } else {
+    email.style.border = '2px solid red';
+    email.style.color = 'red';
+    errorEmail.style.display = 'block';
+  }
+}

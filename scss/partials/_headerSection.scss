@@ -28,6 +28,9 @@
       font-weight: bold;
       line-height: 2;
       color: $darkBlue !important;
+      &:hover {
+        color: $darkGrayishBlue !important;
+      }
     }
   }
   .headerBtn {
