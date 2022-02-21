@@ -53,36 +53,38 @@
         line-height: 1.8;
       }
     }
-    .articleOne, .articleTwo, .articleThree {
-      p {
-        color: $darkGrayishBlue;
-        font-size: 14px;
-        line-height: 1.8;
-        padding: 10px;
-      }
-      .articleTitle {
-        height: 45px;
-        position: relative;
-        span {
-          background-color: $brightRed;
-          padding: 7px 25px;
-          border-radius: 20px;
-          float: left;
-          font-size: 16px;
-          color: white;
-          font-weight: bold;
-          position: absolute;
-          left: 10px;
+    .threeArticles {
+      .articleOne, .articleTwo, .articleThree {
+        p {
+          color: $darkGrayishBlue;
+          font-size: 14px;
+          line-height: 1.8;
+          padding: 10px;
         }
-        h3 {
-          color: $darkBlue;
-          font-size: 16px;
-          font-weight: bold;
-          margin: 0;
-          background-color: $veryPaleRed;
-          padding: 9px 0 9px 30px;
-          margin-left: 55px;
-          float: left;
+        .articleTitle {
+          height: 45px;
+          position: relative;
+          span {
+            background-color: $brightRed;
+            padding: 7px 25px;
+            border-radius: 20px;
+            float: left;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+          }
+          h3 {
+            color: $darkBlue;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+            background-color: $veryPaleRed;
+            padding: 9px 0 9px 30px;
+            margin-left: 55px;
+            float: left;
+          }
         }
       }
     }
@@ -165,6 +167,138 @@
       transition: .2s;
       &:hover {
         color: #f25f3ab0;
+      }
+    }
+  }
+}
+
+
+//  MEDIA QUERY
+
+@media (min-width: 1200px) {
+  .mainDiv {
+    width: 100%;
+    margin-top: 130px;
+    .joinDiv {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 200px;
+      .illustrationIntroDiv {
+        width: 50%;
+      }
+      .firstArticleDiv {
+        padding: 80px 60px 0 0;
+        text-align: left;
+        width: 50%;
+        h1 {
+          font-size: 55px;
+        }
+        p {
+          margin: 20px 0;
+          width: 70%;
+        }
+      }
+    }
+    .mainAndThreeArticles {
+      margin: 100px 0;
+      padding: 0 200px;
+      display: flex;
+      justify-content: space-between;
+      .mainArticle {
+        padding: 0 100px 0 0;
+        text-align: left;
+        width: 50%;
+        h2 {
+          font-size: 40px;
+          padding: 0;
+        }
+        p {
+          font-size: 16px;
+          margin-top: 20px;
+          width: 70%;
+        }
+      }
+      .threeArticles {
+        width: 50%;
+        .articleOne, .articleTwo, .articleThree {
+          p {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 10px 0 10px 100px;
+          }
+          .articleTitle {
+            h3 {
+              padding: 9px 0 9px 43px;
+            }
+          }
+        }
+      }
+    }
+    .customersSection {
+      text-align: center;
+      h5 {
+        font-weight: bold;
+        color: $darkBlue;
+        font-size: 40px;
+        margin: 20px 0 60px;
+      }
+      .anishaDiv, .aliDiv, .richardDiv, .shanaiDiv {
+        padding: 30px;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+        h6 {
+          color: $darkBlue;
+          font-weight: bold;
+          margin: 20px 0;
+        }
+        p {
+          color: $darkGrayishBlue;
+          font-size: 14px;
+        }
+      }
+      .buttonsSlider {
+        button {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          padding: 0;
+          border: 1px solid $brightRed;
+          transition: .3s;
+          &:hover {
+            opacity: .7;
+            background-color: $brightRed;
+          }
+        }
+      }
+      .customerGetStartedBtn {
+        border: none;
+        background-color: $brightRed;
+        padding: 12px 30px;
+        border-radius: 20px;
+        color: white;
+        font-size: 13px;
+        box-shadow: 0px 6px 9px 0px $brightRed;
+        margin: 40px 0;
+        transition: .2s;
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+    .simplifyDiv {
+      text-align: left;
+      padding: 70px 200px;
+      background-image: url("../images/bg-simplify-section-desktop.svg");
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h4 {
+        width: 500px;
+      }
+      button {
+        margin: 0;
       }
     }
   }

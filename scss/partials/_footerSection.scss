@@ -103,3 +103,75 @@
     }
   }
 }
+.codedBy {
+  width: 375px;
+  background-color: $veryDarkBlue;
+  color: $darkGrayishBlue;
+  text-align: center;
+  font-size: 11px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+
+
+// MEDIA QUERY
+
+@media (min-width: 1200px) {
+  .mainFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px 200px;
+    .form {
+      width: 320px;
+      .inputFooterDiv {
+        margin: 30px 10px;
+        input {
+          width: 205px;
+        }
+      }
+      .errorEmail {
+        top: 80px;
+      }
+    }
+    .navFooter {
+      width: 400px;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .iconsLogoFooter {
+      width: 270px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-top: 30px;
+      .iconsFooter {
+        padding: 0 100px 0 0;
+        margin-top: 60px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .logoFooter {
+        padding: 0;
+        text-align: left;
+        img {
+          width: 160px;
+        }
+      }
+    }
+    .copyrightDiv {
+      text-align: right;
+      position: absolute;
+      top: 160px;
+    }
+  }
+  .codedBy {
+    width: 100%;
+  }
+}

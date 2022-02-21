@@ -11,8 +11,7 @@
   margin-top: 30px; }
   .mainHeader .container-fluid {
     padding: 0;
-    margin: 0;
-    position: relative; }
+    margin: 0; }
   .mainHeader .btnHamburgerMenu {
     width: 30px;
     height: 30px;
@@ -25,10 +24,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 3px;
-    position: absolute;
-    top: 60px;
-    width: 350px; }
+    box-shadow: 0 0 3px; }
     .mainHeader .hamburgerMenu a {
       font-weight: bold;
       line-height: 2;
@@ -38,6 +34,32 @@
   .mainHeader .headerBtn {
     display: none; }
 
+@media (min-width: 1200px) {
+  .mainHeader {
+    width: 100%;
+    padding: 0 200px; }
+    .mainHeader .container-fluid .navbar-brand {
+      margin-top: 10px; }
+    .mainHeader .btnHamburgerMenu {
+      display: none; }
+    .mainHeader .hamburgerMenu {
+      padding: 0;
+      box-shadow: none;
+      justify-content: space-evenly; }
+      .mainHeader .hamburgerMenu .nav-link {
+        padding: 0 20px;
+        font-weight: normal; }
+    .mainHeader .headerBtn {
+      display: block;
+      border: none;
+      background-color: #f25f3a;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 20px;
+      box-shadow: 0px 6px 9px 0px #f25f3a;
+      transition: .2s; }
+      .mainHeader .headerBtn:hover {
+        opacity: .7; } }
 .mainDiv {
   width: 375px;
   margin: auto;
@@ -80,15 +102,15 @@
       color: #9095a7;
       font-size: 14px;
       line-height: 1.8; }
-  .mainDiv .mainAndThreeArticles .articleOne p, .mainDiv .mainAndThreeArticles .articleTwo p, .mainDiv .mainAndThreeArticles .articleThree p {
+  .mainDiv .mainAndThreeArticles .threeArticles .articleOne p, .mainDiv .mainAndThreeArticles .threeArticles .articleTwo p, .mainDiv .mainAndThreeArticles .threeArticles .articleThree p {
     color: #9095a7;
     font-size: 14px;
     line-height: 1.8;
     padding: 10px; }
-  .mainDiv .mainAndThreeArticles .articleOne .articleTitle, .mainDiv .mainAndThreeArticles .articleTwo .articleTitle, .mainDiv .mainAndThreeArticles .articleThree .articleTitle {
+  .mainDiv .mainAndThreeArticles .threeArticles .articleOne .articleTitle, .mainDiv .mainAndThreeArticles .threeArticles .articleTwo .articleTitle, .mainDiv .mainAndThreeArticles .threeArticles .articleThree .articleTitle {
     height: 45px;
     position: relative; }
-    .mainDiv .mainAndThreeArticles .articleOne .articleTitle span, .mainDiv .mainAndThreeArticles .articleTwo .articleTitle span, .mainDiv .mainAndThreeArticles .articleThree .articleTitle span {
+    .mainDiv .mainAndThreeArticles .threeArticles .articleOne .articleTitle span, .mainDiv .mainAndThreeArticles .threeArticles .articleTwo .articleTitle span, .mainDiv .mainAndThreeArticles .threeArticles .articleThree .articleTitle span {
       background-color: #f25f3a;
       padding: 7px 25px;
       border-radius: 20px;
@@ -98,7 +120,7 @@
       font-weight: bold;
       position: absolute;
       left: 10px; }
-    .mainDiv .mainAndThreeArticles .articleOne .articleTitle h3, .mainDiv .mainAndThreeArticles .articleTwo .articleTitle h3, .mainDiv .mainAndThreeArticles .articleThree .articleTitle h3 {
+    .mainDiv .mainAndThreeArticles .threeArticles .articleOne .articleTitle h3, .mainDiv .mainAndThreeArticles .threeArticles .articleTwo .articleTitle h3, .mainDiv .mainAndThreeArticles .threeArticles .articleThree .articleTitle h3 {
       color: #242d52;
       font-size: 16px;
       font-weight: bold;
@@ -173,6 +195,101 @@
       .mainDiv .simplifyDiv button:hover {
         color: #f25f3ab0; }
 
+@media (min-width: 1200px) {
+  .mainDiv {
+    width: 100%;
+    margin-top: 130px; }
+    .mainDiv .joinDiv {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 200px; }
+      .mainDiv .joinDiv .illustrationIntroDiv {
+        width: 50%; }
+      .mainDiv .joinDiv .firstArticleDiv {
+        padding: 80px 60px 0 0;
+        text-align: left;
+        width: 50%; }
+        .mainDiv .joinDiv .firstArticleDiv h1 {
+          font-size: 55px; }
+        .mainDiv .joinDiv .firstArticleDiv p {
+          margin: 20px 0;
+          width: 70%; }
+    .mainDiv .mainAndThreeArticles {
+      margin: 100px 0;
+      padding: 0 200px;
+      display: flex;
+      justify-content: space-between; }
+      .mainDiv .mainAndThreeArticles .mainArticle {
+        padding: 0 100px 0 0;
+        text-align: left;
+        width: 50%; }
+        .mainDiv .mainAndThreeArticles .mainArticle h2 {
+          font-size: 40px;
+          padding: 0; }
+        .mainDiv .mainAndThreeArticles .mainArticle p {
+          font-size: 16px;
+          margin-top: 20px;
+          width: 70%; }
+      .mainDiv .mainAndThreeArticles .threeArticles {
+        width: 50%; }
+        .mainDiv .mainAndThreeArticles .threeArticles .articleOne p, .mainDiv .mainAndThreeArticles .threeArticles .articleTwo p, .mainDiv .mainAndThreeArticles .threeArticles .articleThree p {
+          font-size: 16px;
+          line-height: 1.5;
+          padding: 10px 0 10px 100px; }
+        .mainDiv .mainAndThreeArticles .threeArticles .articleOne .articleTitle h3, .mainDiv .mainAndThreeArticles .threeArticles .articleTwo .articleTitle h3, .mainDiv .mainAndThreeArticles .threeArticles .articleThree .articleTitle h3 {
+          padding: 9px 0 9px 43px; }
+    .mainDiv .customersSection {
+      text-align: center; }
+      .mainDiv .customersSection h5 {
+        font-weight: bold;
+        color: #242d52;
+        font-size: 40px;
+        margin: 20px 0 60px; }
+      .mainDiv .customersSection .anishaDiv, .mainDiv .customersSection .aliDiv, .mainDiv .customersSection .richardDiv, .mainDiv .customersSection .shanaiDiv {
+        padding: 30px; }
+        .mainDiv .customersSection .anishaDiv img, .mainDiv .customersSection .aliDiv img, .mainDiv .customersSection .richardDiv img, .mainDiv .customersSection .shanaiDiv img {
+          width: 80px;
+          height: 80px; }
+        .mainDiv .customersSection .anishaDiv h6, .mainDiv .customersSection .aliDiv h6, .mainDiv .customersSection .richardDiv h6, .mainDiv .customersSection .shanaiDiv h6 {
+          color: #242d52;
+          font-weight: bold;
+          margin: 20px 0; }
+        .mainDiv .customersSection .anishaDiv p, .mainDiv .customersSection .aliDiv p, .mainDiv .customersSection .richardDiv p, .mainDiv .customersSection .shanaiDiv p {
+          color: #9095a7;
+          font-size: 14px; }
+      .mainDiv .customersSection .buttonsSlider button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        padding: 0;
+        border: 1px solid #f25f3a;
+        transition: .3s; }
+        .mainDiv .customersSection .buttonsSlider button:hover {
+          opacity: .7;
+          background-color: #f25f3a; }
+      .mainDiv .customersSection .customerGetStartedBtn {
+        border: none;
+        background-color: #f25f3a;
+        padding: 12px 30px;
+        border-radius: 20px;
+        color: white;
+        font-size: 13px;
+        box-shadow: 0px 6px 9px 0px #f25f3a;
+        margin: 40px 0;
+        transition: .2s; }
+        .mainDiv .customersSection .customerGetStartedBtn:hover {
+          opacity: .7; }
+    .mainDiv .simplifyDiv {
+      text-align: left;
+      padding: 70px 200px;
+      background-image: url("../images/bg-simplify-section-desktop.svg");
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .mainDiv .simplifyDiv h4 {
+        width: 500px; }
+      .mainDiv .simplifyDiv button {
+        margin: 0; } }
 .mainFooter {
   width: 375px;
   margin: auto;
@@ -255,6 +372,60 @@
       margin: 0;
       padding: 20px 0 30px; }
 
+.codedBy {
+  width: 375px;
+  background-color: #1d1e25;
+  color: #9095a7;
+  text-align: center;
+  font-size: 11px;
+  margin: auto;
+  padding-top: 30px; }
+
+@media (min-width: 1200px) {
+  .mainFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px 200px; }
+    .mainFooter .form {
+      width: 320px; }
+      .mainFooter .form .inputFooterDiv {
+        margin: 30px 10px; }
+        .mainFooter .form .inputFooterDiv input {
+          width: 205px; }
+      .mainFooter .form .errorEmail {
+        top: 80px; }
+    .mainFooter .navFooter {
+      width: 400px;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between; }
+    .mainFooter .iconsLogoFooter {
+      width: 270px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-top: 30px; }
+      .mainFooter .iconsLogoFooter .iconsFooter {
+        padding: 0 100px 0 0;
+        margin-top: 60px; }
+        .mainFooter .iconsLogoFooter .iconsFooter img {
+          width: 20px;
+          height: 20px; }
+      .mainFooter .iconsLogoFooter .logoFooter {
+        padding: 0;
+        text-align: left; }
+        .mainFooter .iconsLogoFooter .logoFooter img {
+          width: 160px; }
+    .mainFooter .copyrightDiv {
+      text-align: right;
+      position: absolute;
+      top: 160px; }
+
+  .codedBy {
+    width: 100%; } }
 * {
   box-sizing: border-box; }
 

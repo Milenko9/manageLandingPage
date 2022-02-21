@@ -5,7 +5,6 @@
   .container-fluid {
     padding: 0;
     margin: 0;
-    position: relative;
   }
   .btnHamburgerMenu {
     width: 30px;
@@ -21,9 +20,6 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 3px;
-    position: absolute;
-    top: 60px;
-    width: 350px;
     a {
       font-weight: bold;
       line-height: 2;
@@ -35,5 +31,45 @@
   }
   .headerBtn {
     display: none;
+  }
+}
+
+
+//  MEDIA QUERY
+
+@media (min-width: 1200px) {
+  .mainHeader {
+    width: 100%;
+    padding: 0 200px;
+    .container-fluid {
+      .navbar-brand {
+        margin-top: 10px;
+      }
+    }
+    .btnHamburgerMenu {
+      display: none;
+    }
+    .hamburgerMenu {
+      padding: 0;
+      box-shadow: none;
+      justify-content: space-evenly; //It's already display:flex on bootstrap
+      .nav-link {
+        padding: 0 20px;
+        font-weight: normal;
+      }
+    }
+    .headerBtn {
+      display: block;
+      border: none;
+      background-color: $brightRed;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 20px;
+      box-shadow: 0px 6px 9px 0px $brightRed;
+      transition: .2s;
+      &:hover {
+        opacity: .7;
+      }
+    }
   }
 }
