@@ -1,11 +1,11 @@
 .mainHeader {
   width: 375px;
-  border: 1px solid red;
   margin: auto;
   margin-top: 30px;
   .container-fluid {
     padding: 0;
     margin: 0;
+    position: relative;
   }
   .btnHamburgerMenu {
     width: 30px;
@@ -21,7 +21,9 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 3px;
-    margin-top: 30px;
+    position: absolute;
+    top: 60px;
+    width: 350px;
     a {
       font-weight: bold;
       line-height: 2;

@@ -1,16 +1,12 @@
 .mainDiv {
   width: 375px;
-  border: 4px solid green;
   margin: auto;
   margin-top: 20px;
   padding: 0;
   .joinDiv {
-    border: 1px solid red;
     .illustrationIntroDiv {
-      border: 1px solid blue;
     }
     .firstArticleDiv {
-      border: 1px solid purple;
       padding: 20px;
       text-align: center;
       h1 {
@@ -37,9 +33,7 @@
     }
   }
   .mainAndThreeArticles {
-    border: 3px solid blue;
     .mainArticle {
-      border: 3px solid orange;
       padding: 20px;
       text-align: center;
       h2 {
@@ -56,7 +50,6 @@
       }
     }
     .articleOne, .articleTwo, .articleThree {
-      border: 2px solid red;
       p {
         color: $darkGrayishBlue;
         font-size: 14px;
@@ -65,7 +58,6 @@
       }
       .articleTitle {
         height: 45px;
-        border: 2px solid black;
         position: relative;
         span {
           background-color: $brightRed;
@@ -92,8 +84,49 @@
     }
   }
   .customersSection {
-    border: 4px solid black;
-    padding: 50px;
+    text-align: center;
+    h5 {
+      font-weight: bold;
+      color: $darkBlue;
+      font-size: 30px;
+      margin: 20px 0 60px;
+    }
+    .anishaDiv, .aliDiv, .richardDiv, .shanaiDiv {
+      padding: 30px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      h6 {
+        color: $darkBlue;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+      p {
+        color: $darkGrayishBlue;
+        font-size: 14px;
+      }
+    }
+    .buttonsSlider {
+      button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        padding: 0;
+        border: 1px solid $brightRed;
+        transition: .3s;
+      }
+    }
+    .customerGetStartedBtn {
+      border: none;
+      background-color: $brightRed;
+      padding: 12px 30px;
+      border-radius: 20px;
+      color: white;
+      font-size: 13px;
+      box-shadow: 0px 6px 9px 0px $brightRed;
+      margin: 40px 0;
+    }
   }
   .simplifyDiv {
     background-color: $brightRed;
