@@ -175,7 +175,7 @@
 
 //  MEDIA QUERY
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .mainDiv {
     width: 100%;
     margin-top: 130px;
@@ -235,56 +235,16 @@
       }
     }
     .customersSection {
-      text-align: center;
-      h5 {
-        font-weight: bold;
-        color: $darkBlue;
-        font-size: 40px;
-        margin: 20px 0 60px;
-      }
       .anishaDiv, .aliDiv, .richardDiv, .shanaiDiv {
-        padding: 30px;
-        img {
-          width: 80px;
-          height: 80px;
-        }
-        h6 {
-          color: $darkBlue;
-          font-weight: bold;
-          margin: 20px 0;
-        }
-        p {
-          color: $darkGrayishBlue;
-          font-size: 14px;
-        }
+        width: 25%;
+        display: block;
+        float: left;
       }
       .buttonsSlider {
-        button {
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          padding: 0;
-          border: 1px solid $brightRed;
-          transition: .3s;
-          &:hover {
-            opacity: .7;
-            background-color: $brightRed;
-          }
-        }
+        display: none;
       }
       .customerGetStartedBtn {
-        border: none;
-        background-color: $brightRed;
-        padding: 12px 30px;
-        border-radius: 20px;
-        color: white;
-        font-size: 13px;
-        box-shadow: 0px 6px 9px 0px $brightRed;
-        margin: 40px 0;
-        transition: .2s;
-        &:hover {
-          opacity: .7;
-        }
+        margin: 50px 0 100px;
       }
     }
     .simplifyDiv {

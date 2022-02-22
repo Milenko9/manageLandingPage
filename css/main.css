@@ -24,7 +24,8 @@
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 3px; }
+    box-shadow: 0 0 3px;
+    margin-top: 30px; }
     .mainHeader .hamburgerMenu a {
       font-weight: bold;
       line-height: 2;
@@ -34,7 +35,7 @@
   .mainHeader .headerBtn {
     display: none; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .mainHeader {
     width: 100%;
     padding: 0 200px; }
@@ -45,9 +46,11 @@
     .mainHeader .hamburgerMenu {
       padding: 0;
       box-shadow: none;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      background-color: transparent;
+      margin-top: 5px; }
       .mainHeader .hamburgerMenu .nav-link {
-        padding: 0 20px;
+        padding: 0 15px;
         font-weight: normal; }
     .mainHeader .headerBtn {
       display: block;
@@ -195,7 +198,7 @@
       .mainDiv .simplifyDiv button:hover {
         color: #f25f3ab0; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .mainDiv {
     width: 100%;
     margin-top: 130px; }
@@ -238,47 +241,14 @@
           padding: 10px 0 10px 100px; }
         .mainDiv .mainAndThreeArticles .threeArticles .articleOne .articleTitle h3, .mainDiv .mainAndThreeArticles .threeArticles .articleTwo .articleTitle h3, .mainDiv .mainAndThreeArticles .threeArticles .articleThree .articleTitle h3 {
           padding: 9px 0 9px 43px; }
-    .mainDiv .customersSection {
-      text-align: center; }
-      .mainDiv .customersSection h5 {
-        font-weight: bold;
-        color: #242d52;
-        font-size: 40px;
-        margin: 20px 0 60px; }
-      .mainDiv .customersSection .anishaDiv, .mainDiv .customersSection .aliDiv, .mainDiv .customersSection .richardDiv, .mainDiv .customersSection .shanaiDiv {
-        padding: 30px; }
-        .mainDiv .customersSection .anishaDiv img, .mainDiv .customersSection .aliDiv img, .mainDiv .customersSection .richardDiv img, .mainDiv .customersSection .shanaiDiv img {
-          width: 80px;
-          height: 80px; }
-        .mainDiv .customersSection .anishaDiv h6, .mainDiv .customersSection .aliDiv h6, .mainDiv .customersSection .richardDiv h6, .mainDiv .customersSection .shanaiDiv h6 {
-          color: #242d52;
-          font-weight: bold;
-          margin: 20px 0; }
-        .mainDiv .customersSection .anishaDiv p, .mainDiv .customersSection .aliDiv p, .mainDiv .customersSection .richardDiv p, .mainDiv .customersSection .shanaiDiv p {
-          color: #9095a7;
-          font-size: 14px; }
-      .mainDiv .customersSection .buttonsSlider button {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        padding: 0;
-        border: 1px solid #f25f3a;
-        transition: .3s; }
-        .mainDiv .customersSection .buttonsSlider button:hover {
-          opacity: .7;
-          background-color: #f25f3a; }
-      .mainDiv .customersSection .customerGetStartedBtn {
-        border: none;
-        background-color: #f25f3a;
-        padding: 12px 30px;
-        border-radius: 20px;
-        color: white;
-        font-size: 13px;
-        box-shadow: 0px 6px 9px 0px #f25f3a;
-        margin: 40px 0;
-        transition: .2s; }
-        .mainDiv .customersSection .customerGetStartedBtn:hover {
-          opacity: .7; }
+    .mainDiv .customersSection .anishaDiv, .mainDiv .customersSection .aliDiv, .mainDiv .customersSection .richardDiv, .mainDiv .customersSection .shanaiDiv {
+      width: 25%;
+      display: block;
+      float: left; }
+    .mainDiv .customersSection .buttonsSlider {
+      display: none; }
+    .mainDiv .customersSection .customerGetStartedBtn {
+      margin: 50px 0 100px; }
     .mainDiv .simplifyDiv {
       text-align: left;
       padding: 70px 200px;
@@ -381,7 +351,7 @@
   margin: auto;
   padding-top: 30px; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .mainFooter {
     width: 100%;
     display: flex;
@@ -432,7 +402,6 @@
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
   background-image: url("../images/bg-tablet-pattern.svg");
-  background-repeat: repeat-x;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
